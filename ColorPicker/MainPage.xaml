@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:inputs="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"
+             x:Class="ColorPicker.MainPage">
+
+    <Grid>
+        <Image Source="beach2.jpg" Aspect="AspectFill" />
+        <inputs:SfColorPicker EnableLiquidGlassEffect="True" VerticalOptions="Start" />
+    </Grid>
+
+</ContentPage>
