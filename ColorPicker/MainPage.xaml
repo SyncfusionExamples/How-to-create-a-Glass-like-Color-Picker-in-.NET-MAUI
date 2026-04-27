@@ -2,11 +2,14 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:inputs="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"
+             xmlns:core="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
              x:Class="ColorPicker.MainPage">
 
     <Grid>
         <Image Source="beach2.jpg" Aspect="AspectFill" />
-        <inputs:SfColorPicker EnableLiquidGlassEffect="True" VerticalOptions="Start" />
+        <core:SfGlassEffectView CornerRadius="16" HeightRequest="32" WidthRequest="70" VerticalOptions="Start" Margin="0, 12">
+            <inputs:SfColorPicker EnableLiquidGlassEffect="True" DisplayViewStrokeThickness="0" SliderThumbFill="White" SliderThumbStroke="Transparent" PopupBackground="Transparent" />
+        </core:SfGlassEffectView>
     </Grid>
 
 </ContentPage>
